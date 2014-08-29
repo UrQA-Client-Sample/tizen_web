@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/test" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="t3aaehCaID.test" package="t3aaehCaID" required_version="2.2"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>test</name>
+    
+	<tizen:privilege name="http://tizen.org/privilege/tizen"/>
+    <tizen:privilege name="http://tizen.org/privilege/websetting"/>
+    <tizen:privilege name="http://tizen.org/privilege/web.service"/>
+    <tizen:privilege name="http://tizen.org/privilege/socket"/>
+    <tizen:privilege name="http://tizen.org/privilege/http"/>
+    
+    <!-- <tizen:content-security-policy>aaa</tizen:content-security-policy>  -->
+    <tizen:content-security-policy>allow '*'; media-src *; img-src *;</tizen:content-security-policy>
+    <!-- <tizen:content-security-policy-report-only>123123</tizen:content-security-policy-report-only>  -->
+</widget>
